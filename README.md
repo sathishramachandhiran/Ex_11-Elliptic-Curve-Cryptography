@@ -11,8 +11,9 @@ Alice and Bob choose private keys.
 
 Step 3:
 Compute public keys
-
+```
 public_key = private_key * G (point multiplication).
+```
 Step 4:
 Exchange public keys.
 
