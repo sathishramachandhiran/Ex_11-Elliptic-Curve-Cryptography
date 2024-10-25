@@ -11,7 +11,7 @@ Alice and Bob choose private keys.
 
 Step 3:
 Compute public keys
-```
+```c
 public_key = private_key * G (point multiplication).
 ```
 Step 4:
@@ -22,7 +22,7 @@ Compute the shared secret
 
 shared_secret = private_key * public_key_received.
 # PROGRAM:
-```
+```c
 #include <stdio.h>
 
 // A simple structure to represent points on the elliptic curve
@@ -86,6 +86,8 @@ Point scalarMultiplication(Point P, long long int k, long long int a, long long 
 int main() {
     long long int p, a, b, privateA, privateB;
     Point G, publicA, publicB, sharedSecretA, sharedSecretB;
+    
+    printf("SUBMITTED BY: SATHISH R-212222100048\n");
 
     // Step 1: Input parameters of the elliptic curve
     printf("Enter the prime number (p): ");
@@ -126,6 +128,6 @@ int main() {
 }
 ```
 # OUTPUT:
-![Screenshot 2024-10-17 081042](https://github.com/user-attachments/assets/d1576cd1-d4df-4561-996c-dc7a2918719e)
+![out](ecc.png)
 # RESULT:
 The program for Elliptic Curve Cryptography (ECC) was executed successfully, and both Alice and Bob computed the same shared secret.
